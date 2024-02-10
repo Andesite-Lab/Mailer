@@ -8,7 +8,7 @@ import { EnvironmentConfiguration, packageJsonConfiguration } from '@/Config';
 
 export class SwaggerUiPlugin implements IPlugin {
     configure(app: FastifyInstance): void {
-        const pathAssets: string = join(__dirname, '../Assets');
+        const pathAssets: string = join(__dirname, '../Public/Logo');
         const swaggerUiOptions: FastifySwaggerUiOptions = {
             routePrefix: `${EnvironmentConfiguration.env.PREFIX}/swagger`,
             theme: {
@@ -19,7 +19,7 @@ export class SwaggerUiPlugin implements IPlugin {
                         rel: 'icon',
                         type: 'image/png',
                         sizes: '192x192',
-                        content: readFileSync(join(pathAssets, '/Logo/android-chrome-192x192.png')),
+                        content: readFileSync(join(pathAssets, '/android-chrome-192x192.png')),
                     },
 
                     {
@@ -27,41 +27,41 @@ export class SwaggerUiPlugin implements IPlugin {
                         rel: 'icon',
                         type: 'image/png',
                         sizes: '512x512',
-                        content: readFileSync(join(pathAssets, '/Logo/android-chrome-512x512.png')),
+                        content: readFileSync(join(pathAssets, '/android-chrome-512x512.png')),
                     },
                     {
                         filename: 'apple-touch-icon',
                         rel: 'icon',
                         type: 'image/png',
                         sizes: '180x180',
-                        content: readFileSync(join(pathAssets, '/Logo/apple-touch-icon.png')),
+                        content: readFileSync(join(pathAssets, '/apple-touch-icon.png')),
                     },
                     {
                         filename: 'favicon-16x16',
                         rel: 'icon',
                         type: 'image/png',
                         sizes: '16x16',
-                        content: readFileSync(join(pathAssets, '/Logo/favicon-16x16.png')),
+                        content: readFileSync(join(pathAssets, '/favicon-16x16.png')),
                     },
                     {
                         filename: 'favicon-32x32',
                         rel: 'icon',
                         type: 'image/png',
                         sizes: '32x32',
-                        content: readFileSync(join(pathAssets, '/Logo/favicon-32x32.png')),
+                        content: readFileSync(join(pathAssets, '/favicon-32x32.png')),
                     },
                     {
                         filename: 'favicon',
                         rel: 'shortcut icon',
                         type: 'image/x-icon',
                         sizes: '16x16',
-                        content: readFileSync(join(pathAssets, '/Logo/favicon.ico')),
+                        content: readFileSync(join(pathAssets, '/favicon.ico')),
                     },
                 ] as { filename: string; rel: string; type: string; sizes: string; content: string | Buffer; }[]
             },
             logo: {
                 type: 'image/png',
-                content: readFileSync(join(pathAssets, '/Logo/logo.png')),
+                content: readFileSync(join(pathAssets, '/logo.png')),
             }
 
         };
