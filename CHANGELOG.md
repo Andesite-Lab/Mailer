@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.5](https://github.com/Andesite-Lab/Mailer/compare/v1.0.4...v1.0.5) (2024-02-10)
+
+
+### Bug Fixes
+
+* source url ([e8c91f9](https://github.com/Andesite-Lab/Mailer/commit/e8c91f9369e5bba463be60dc0b5f4b1bee0703db))
+
 ## [1.0.4](https://github.com/Andesite-Lab/Mailer/compare/v1.0.3...v1.0.4) (2024-02-10)
 
 
