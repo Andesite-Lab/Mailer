@@ -1,0 +1,149 @@
+{
+  "app": {
+    "start": "{{name}} Démarré",
+    "stop": "{{name}} Arrêté",
+    "signal": {
+      "SIGINT": "SIGINT (Ctrl-C) reçu."
+    }
+  },
+  "workers": {
+    "start": "Consumer a démarré.",
+    "stop": "Consumer a arrêté."
+  },
+  "infrastructure": {
+    "redpanda": {
+      "producer_connected": "RedPanda Producer connecté.",
+      "producer_disconnected": "RedPanda Producer déconnecté.",
+      "consumer_connected": "RedPanda Consumer connecté.",
+      "consumer_disconnected": "RedPanda Consumer déconnecté."
+    },
+    "database": {
+      "connected": "Database connectée.",
+      "disconnected": "Database déconnectée.",
+      "migrations_run": "Database migrations run.",
+      "migrations_rollback_all": "Database migrations rollback all.",
+      "seeders_run": "Database seeds run."
+    },
+    "smtp": {
+      "connected": "SMTP connecté.",
+      "disconnected": "SMTP déconnecté."
+    }
+  },
+  "error": {
+    "errorConfig": {
+      "DB_HOST_NOT_FOUND": "DB_HOST environment variable not found.",
+      "DB_NAME_NOT_FOUND": "DB_NAME environment variable not found.",
+      "DB_PASSWORD_NOT_FOUND": "DB_PASSWORD environment variable not found.",
+      "DB_USER_NOT_FOUND": "DB_USER environment variable not found.",
+      "DB_PORT_NOT_FOUND": "DB_PORT environment variable not found.",
+      "COOKIE_SECRET_NOT_FOUND": "COOKIE_SECRET environment variable not found.",
+      "HOST_NOT_FOUND": "HOST environment variable not found.",
+      "HTTP_PORT_NOT_FOUND": "HTTP_PORT environment variable not found.",
+      "NODE_ENV_NOT_FOUND": "NODE_ENV environment variable not found.",
+      "RED_PANDA_BROKER_NOT_FOUND": "RED_PANDA_BROKER environment variable not found.",
+      "WS_PORT_NOT_FOUND": "WS_PORT environment variable not found."
+    },
+    "errorInfrastructure": {
+      "KAFKA_PRODUCER_CONNECTION_ERROR": "Kafka producteur erreur de connexion.",
+      "KAFKA_PRODUCER_IS_NOT_CONNECTED": "Kafka producteur n'est pas connecté.",
+      "KAFKA_PRODUCER_DISCONNECT_ERROR": "Kafka producteur erreur de déconnexion.",
+      "KAFKA_PRODUCER_SEND_ERROR": "Kafka producteur erreur d'envoi.",
+      "KAFKA_CONSUMER_CONNECTION_ERROR": "Kafka consommateur erreur de connexion.",
+      "KAFKA_CONSUMER_IS_NOT_CONNECTED": "Kafka consommateur n'est pas connecté.",
+      "KAFKA_CONSUMER_SUBSCRIBE_ERROR": "Kafka consommateur erreur d'abonnement.",
+      "KAFKA_CONSUMER_DISCONNECT_ERROR": "Kafka consommateur erreur de déconnexion."
+    },
+    "errorValidator": {
+      "LIMIT_NOT_A_INTEGER": "The limit must be an integer.",
+      "OFFSET_NOT_A_INTEGER": "The offset must be an integer.",
+      "ID_IS_REQUIRED": "The id is required.",
+      "ID_NOT_A_INTEGER": "The id must be an integer.",
+      "UUID_IS_REQUIRED": "The uuid is required.",
+      "UUID_NOT_VALID": "The uuid is not valid.",
+      "$IN_ARRAY_IS_EMPTY": "Le tableau $in est vide.",
+      "$NIN_ARRAY_IS_EMPTY": "Le tableau $nin est vide.",
+      "$EQ_NOT_VALID": "La valeur $eq n'est pas valide. (string, number, boolean)",
+      "$NEQ_NOT_VALID": "La valeur $neq n'est pas valide. (string, number, boolean)",
+      "$MATCH_NOT_VALID": "La valeur $match n'est pas valide. (string)",
+      "$LT_NOT_VALID": "La valeur $lt n'est pas valide. (number)",
+      "$LTE_NOT_VALID": "La valeur $lte n'est pas valide. (number)",
+      "$GT_NOT_VALID": "La valeur $gt n'est pas valide. (number)",
+      "$GTE_NOT_VALID": "La valeur $gte n'est pas valide. (number)"
+    },
+    "errorDatabase": {
+      "DB_CONNECTION_ERROR": "Erreur de connexion à la base de données.",
+      "DB_DISCONNECT_ERROR": "Erreur de déconnexion de la base de données.",
+      "MODEL_NOT_CREATED": "Le modèle n'a pas été créé.",
+      "MODEL_UNIQUE_CONSTRAINT_ERROR": "Le modèle {{tableName}} a une erreur de contrainte unique. [{{constraint}}]",
+      "MODEL_NOT_FOUND": "Le modèle {{tableName}} n'a pas été trouvé.",
+      "MODEL_NOT_UPDATED": "Le modèle {{tableName}}  n'a pas été mis à jour.",
+      "MODEL_NOT_DELETED": "Le modèle {{tableName}} n'a pas été supprimé.",
+      "OTHER_DATABASE_ERROR": "Erreur de base de données inconnue."
+    },
+    "errorMiddleware": {
+      "TOKEN_INVALID": "Le token est invalide",
+      "TOKEN_INVALID_STRUCTURE": "La structure du token est invalide",
+      "TOKEN_INVALID_SIGNATURE": "La signature du token est invalide",
+      "TOKEN_EXPIRED": "Le token a expiré",
+      "PERMISSION_DENIED": "Permission refusée"
+    },
+    "errorUseCase": {
+    },
+    "errorService": {
+      "HANDLEBARS_TEMPLATE_NOT_FOUND": "Handlebars le template n'a pas été trouvé."
+    },
+    "errorExternal": {
+      "UNAUTHORIZED": "Non autorisé",
+      "FORBIDDEN": "Interdit",
+      "NOT_FOUND": "Non trouvé",
+      "TIMEOUT": "Délai dépassé",
+      "SERVER_ERROR": "Erreur serveur"
+    }
+  },
+  "http": {
+    "LISTENING": "Le serveur HTTP est en écoute sur le port {{port}} en mode {{mode}}. (Prefix: {{prefix}}) PID: {{pid}}",
+    "CLOSE": "Le serveur HTTP est arrêté.",
+
+    "plugin": {
+      "RateLimitPlugin": {
+        "RATE_LIMIT": "Rate limit {{max}} atteint. Veuillez réessayer dans {{max}} secondes."
+      }
+    },
+    "handler": {
+      "microserviceHandler": {
+        "ping": "pong",
+        "info": "Recuperation des informations réussie."
+      },
+      "CRUD": {
+        "insert": "Création {{tableName}} réussie.",
+        "findAll": "Récupération {{tableName}} réussie.",
+        "findOne": "Récupération {{tableName}} réussie.",
+        "find": "Récupération {{tableName}} réussie.",
+        "updateAll": "Mise à jour {{tableName}} réussie.",
+        "updateOne": "Mise à jour {{tableName}} réussie.",
+        "update": "Mise à jour {{tableName}} réussie.",
+        "deleteAll": "Suppression {{tableName}} réussie.",
+        "deleteOne": "Suppression {{tableName}} réussie.",
+        "delete": "Suppression {{tableName}} réussie.",
+        "truncate": "Troncature {{tableName}} réussie.",
+        "count": "Comptage {{tableName}} réussi."
+      }
+    }
+  },
+  "assets": {
+    "handlebars": {
+      "welcome": {
+        "subject": "Bienvenue sur notre plateforme {{username}} !",
+        "title": "Bienvenue {{username}}",
+        "header": "Bienvenue sur notre plateforme {{username}} !",
+        "content": [
+          "Nous sommes ravis de vous accueillir sur notre plateforme.",
+          "Vous pouvez dès maintenant vous connecter à votre compte et profiter de toutes les fonctionnalités que nous proposons",
+          "Merci encore {{username}} de votre confiance et à très bientôt !"
+        ],
+
+        "footer": "© 2024 Andesite. Tous droits réservés."
+      }
+    }
+  }
+}

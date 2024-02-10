@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            margin: auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: -2px 2px 7px 2px rgba(0,0,0,0.2);
+            padding: 20px;
+        }
+        .header {
+            background: #007bff;
+            border-radius: 5px;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .footer {
+            background: #eee;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h2>{{header}}</h2>
+    </div>
+    <div class="content">
+        <pre>{{content}}</pre>
+    </div>
+    <div class="footer">
+        {{footer}}
+    </div>
+    <img src="{{url}}">
+</div>
+</body>
+</html>
