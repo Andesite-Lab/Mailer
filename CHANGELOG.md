@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/Andesite-Lab/Mailer/compare/v1.0.2...v1.0.3) (2024-02-10)
+
+
+### Bug Fixes
+
+* correction of dockerfile ([53090d8](https://github.com/Andesite-Lab/Mailer/commit/53090d8e8b901242439db74d943b9de2a4b16734))
+
 ## [1.0.2](https://github.com/Andesite-Lab/Mailer/compare/v1.0.1...v1.0.2) (2024-02-10)
 
 
