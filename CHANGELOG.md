@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/Andesite-Lab/Mailer/compare/v1.0.0...v1.0.1) (2024-02-10)
+
+
+### Bug Fixes
+
+* add cookie secret ([f960891](https://github.com/Andesite-Lab/Mailer/commit/f96089184b6987cffad8748fed80cf8b387e3d94))
+
 ## 1.0.0 (2024-02-10)
 
 
