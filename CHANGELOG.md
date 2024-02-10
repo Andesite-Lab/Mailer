@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/Andesite-Lab/Mailer/compare/v1.0.3...v1.0.4) (2024-02-10)
+
+
+### Bug Fixes
+
+* fix template images sources and url ([bd0af8c](https://github.com/Andesite-Lab/Mailer/commit/bd0af8cf7158d5f195064027168da39f88e3472d))
+
 ## [1.0.3](https://github.com/Andesite-Lab/Mailer/compare/v1.0.2...v1.0.3) (2024-02-10)
 
 

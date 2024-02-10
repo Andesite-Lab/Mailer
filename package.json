@@ -1,6 +1,6 @@
 {
   "name": "mailer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Mailer - Microservice",
   "main": "Build/App.js",
   "types": "Build/App.d.ts",
