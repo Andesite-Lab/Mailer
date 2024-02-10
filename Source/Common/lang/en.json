@@ -1,0 +1,148 @@
+{
+  "app": {
+    "start": "{{name}} Started.",
+    "stop": "{{name}} Stopped.",
+    "signal": {
+      "SIGINT": "SIGINT (Ctrl-C) received."
+    }
+  },
+  "workers": {
+    "start": "Consumer started.",
+    "stop": "Consumer stopped."
+  },
+  "infrastructure": {
+    "redpanda": {
+      "producer_connected": "RedPanda Producer connected.",
+      "producer_disconnected": "RedPanda Producer disconnected.",
+      "consumer_connected": "RedPanda Consumer connected.",
+      "consumer_disconnected": "RedPanda Consumer disconnected."
+    },
+    "database": {
+      "connected": "Database connected.",
+      "disconnected": "Database disconnected.",
+      "migrations_run": "Database migrations run.",
+      "migrations_rollback_all": "Database migrations rollback all.",
+      "seeders_run": "Database seeds run."
+    },
+    "smtp": {
+      "connected": "SMTP connected.",
+      "disconnected": "SMTP disconnected."
+    }
+  },
+  "error": {
+    "errorConfig": {
+      "DB_HOST_NOT_FOUND": "DB_HOST variable d'environnement non trouvée.",
+      "DB_NAME_NOT_FOUND": "DB_NAME variable d'environnement non trouvée.",
+      "DB_PASSWORD_NOT_FOUND": "DB_PASSWORD variable d'environnement non trouvée.",
+      "DB_USER_NOT_FOUND": "DB_USER variable d'environnement non trouvée.",
+      "DB_PORT_NOT_FOUND": "DB_PORT variable d'environnement non trouvée.",
+      "COOKIE_SECRET_NOT_FOUND": "COOKIE_SECRET variable d'environnement non trouvée.",
+      "HOST_NOT_FOUND": "HOST variable d'environnement non trouvée.",
+      "HTTP_PORT_NOT_FOUND": "HTTP_PORT variable d'environnement non trouvée.",
+      "NODE_ENV_NOT_FOUND": "NODE_ENV variable d'environnement non trouvée.",
+      "RED_PANDA_BROKER_NOT_FOUND": "RED_PANDA_BROKER variable d'environnement non trouvée.",
+      "WS_PORT_NOT_FOUND": "WS_PORT variable d'environnement non trouvée."
+    },
+    "errorInfrastructure": {
+      "KAFKA_PRODUCER_CONNECTION_ERROR": "Kafka producer connection error.",
+      "KAFKA_PRODUCER_IS_NOT_CONNECTED": "Kafka producer is not connected.",
+      "KAFKA_PRODUCER_DISCONNECT_ERROR": "Kafka producer disconnect error.",
+      "KAFKA_PRODUCER_SEND_ERROR": "Kafka producer send error.",
+      "KAFKA_CONSUMER_CONNECTION_ERROR": "Kafka consumer connection error.",
+      "KAFKA_CONSUMER_IS_NOT_CONNECTED": "Kafka consumer is not connected.",
+      "KAFKA_CONSUMER_SUBSCRIBE_ERROR": "Kafka consumer subscribe error.",
+      "KAFKA_CONSUMER_DISCONNECT_ERROR": "Kafka consumer disconnect error."
+    },
+    "errorValidator": {
+      "LIMIT_NOT_A_INTEGER": "The limit must be an integer.",
+      "OFFSET_NOT_A_INTEGER": "The offset must be an integer.",
+      "ID_IS_REQUIRED": "The id is required.",
+      "ID_NOT_A_INTEGER": "The id must be an integer.",
+      "UUID_IS_REQUIRED": "The uuid is required.",
+      "UUID_NOT_VALID": "The uuid is not valid.",
+      "$IN_ARRAY_IS_EMPTY": "The $in array is empty.",
+      "$NIN_ARRAY_IS_EMPTY": "The $nin array is empty.",
+      "$EQ_NOT_VALID": "The $eq is not valid. (string, number, boolean)",
+      "$NEQ_NOT_VALID": "The $neq is not valid. (string, number, boolean)",
+      "$MATCH_NOT_VALID": "The $match is not valid. (string)",
+      "$LT_NOT_VALID": "The $lt is not valid. (number)",
+      "$LTE_NOT_VALID": "The $lte is not valid. (number)",
+      "$GT_NOT_VALID": "The $gt is not valid. (number)",
+      "$GTE_NOT_VALID": "The $gte is not valid. (number)"
+    },
+    "errorDatabase": {
+      "DB_CONNECTION_ERROR": "Database connection error.",
+      "DB_DISCONNECT_ERROR": "Database disconnect error.",
+      "MODEL_NOT_CREATED": "Model {{tableName}} not created.",
+      "MODEL_UNIQUE_CONSTRAINT_ERROR": "Model {{tableName}} unique constraint error [{{constraint}}].",
+      "MODEL_NOT_FOUND": "Model {{tableName}} not found.",
+      "MODEL_NOT_UPDATED": "Model {{tableName}}  not updated.",
+      "MODEL_NOT_DELETED": "Model {{tableName}} not deleted.",
+      "OTHER_DATABASE_ERROR": "Other database error."
+    },
+    "errorMiddleware": {
+      "TOKEN_INVALID": "Token is invalid.",
+      "TOKEN_INVALID_STRUCTURE": "Token structure is invalid.",
+      "TOKEN_INVALID_SIGNATURE": "Token signature is invalid.",
+      "TOKEN_EXPIRED": "Token is expired",
+      "PERMISSION_DENIED": "Permission denied."
+    },
+    "errorUseCase": {
+    },
+    "errorService": {
+      "HANDLEBARS_TEMPLATE_NOT_FOUND": "Handlebars template not found."
+    },
+    "errorExternal": {
+      "UNAUTHORIZED": "Unauthorized",
+      "FORBIDDEN": "Forbidden",
+      "NOT_FOUND": "Not Found",
+      "TIMEOUT": "Timeout",
+      "SERVER_ERROR": "Server Error"
+    }
+  },
+  "http": {
+    "LISTENING": "HTTP server listening on port {{port}} in {{mode}} mode. (Prefix: {{prefix}}) PID: {{pid}}",
+    "CLOSE": "HTTP server closed.",
+    "plugin": {
+      "RateLimitPlugin": {
+        "RATE_LIMIT": "Rate limit {{max}} exceeded. Try again in {{timeWindow}} seconds."
+      }
+    },
+    "handler": {
+      "microserviceHandler": {
+        "ping": "pong",
+        "info": "Info retrieved successfully."
+      },
+      "CRUD": {
+        "insert": "{{tableName}} insertion successful.",
+        "findAll": "{{tableName}} retrieved successfully.",
+        "findOne": "{{tableName}} retrieved successfully.",
+        "find": "{{tableName}} retrieved successfully.",
+        "updateAll": "{{tableName}} update successful.",
+        "updateOne": "{{tableName}} update successful.",
+        "update": "{{tableName}} update successful.",
+        "deleteAll": "{{tableName}} deletion successful.",
+        "deleteOne": "{{tableName}} deletion successful.",
+        "delete": "{{tableName}} deletion successful.",
+        "truncate": "{{tableName}} truncate successful.",
+        "count": "{{tableName}} count successful."
+      }
+    }
+  },
+  "assets": {
+    "handlebars": {
+      "welcome": {
+        "subject": "Welcome to our platform {{username}} !",
+        "title": "Welcome {{username}}",
+        "header": "Welcome to our platform {{username}} !",
+        "content": [
+          "We are delighted to welcome you to our platform.",
+          "You can now log into your account and enjoy all the features we offer.",
+          "Thank you again {{username}} for your trust and see you soon !"
+        ],
+
+        "footer": "© 2024 Andesite. All rights reserved."
+      }
+    }
+  }
+}
