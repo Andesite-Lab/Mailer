@@ -11,7 +11,7 @@ export class TrackRouter extends AbstractRouter<TrackHandler> {
     protected initRoutes(fastify: FastifyInstance): void {
         fastify.route({
             method: 'GET',
-            url: '/:uuid',
+            url: '/:uuid.png',
             handler: this._handler.piqueSel,
             schema: {
                 tags: ['Mail'],
