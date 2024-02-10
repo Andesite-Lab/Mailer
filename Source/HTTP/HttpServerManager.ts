@@ -11,7 +11,8 @@ import {
     HelmetPlugin,
     RateLimitPlugin,
     SwaggerPlugin,
-    SwaggerUiPlugin
+    SwaggerUiPlugin,
+    FastifyStatic
 } from '@/HTTP/Plugin';
 import { IOnRequestHttpDTO } from '@/Data/DTO';
 import { OnSendHook } from '@/HTTP/Hook';
@@ -30,7 +31,7 @@ export class HttpServerManager {
     private initializeRouter(): IRouter[] {
         return [
             new MicroserviceRouter('/microservice'),
-            new TrackRouter('/mail'),
+            new TrackRouter('/images'),
         ];
     }
 
@@ -43,6 +44,7 @@ export class HttpServerManager {
             new RateLimitPlugin(),
             new SwaggerPlugin(),
             new SwaggerUiPlugin(),
+            new FastifyStatic(),
         ];
     }
 

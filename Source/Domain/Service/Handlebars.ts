@@ -14,14 +14,14 @@ export class Handlebars {
     }
 
     private loadTemplates(): void {
-        readdirSync(join(__dirname, '../Assets/Templates')).forEach(file => {
-            const template: string = readFileSync(join(__dirname, '../Assets/Templates', file), 'utf8');
+        readdirSync(join(__dirname, '../Templates')).forEach(file => {
+            const template: string = readFileSync(join(__dirname, '../Templates', file), 'utf8');
             this.template.set(file, handle.compile(template));
         });
     }
 
     private watchTemplates(): void {
-        watch(join(__dirname, '../Assets/Templates'), (event: 'rename' | 'change'): void => {
+        watch(join(__dirname, '../Templates'), (event: 'rename' | 'change'): void => {
             if (event === 'change' || event === 'rename')
                 this.loadTemplates();
         });

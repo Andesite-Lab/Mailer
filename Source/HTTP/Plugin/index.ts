@@ -5,3 +5,4 @@ export * from './FormbodyPlugin';
 export * from './RateLimitPlugin';
 export * from './SwaggerPlugin';
 export * from './SwaggerUiPlugin';
+export * from './FastifyStatic';
