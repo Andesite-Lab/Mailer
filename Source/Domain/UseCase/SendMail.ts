@@ -48,7 +48,7 @@ export class SendMail {
                         username: interpolation.username,
                     }),
                     footer: I18n.translate('assets.handlebars.welcome.footer', mailItem.language),
-                    url: `https://${process.env.DOMAIN}/api/auth/images/${mailItem.uuid}.png`,
+                    url: `https://${process.env.DOMAIN}/api/mailer/images/${mailItem.uuid}.png`,
                 }),
                 replyTo: 'nicolas.dsp@proton.me'
             });
