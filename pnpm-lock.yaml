@@ -495,7 +495,7 @@ packages:
   /@basalt-lab/basalt-socket@1.4.1:
     resolution: {integrity: sha512-W71N2+zOIOuHcqjTysG/3vmiIY+oKAF7dIj5JN5Eu1y7IjlF5BTaOxQr0jsKjAESvqS7KcCB1msggR5TarL+mQ==}
     dependencies:
-      uWebSockets.js: github.com/uNetworking/uWebSockets.js/105d9ec47126cb82e4a6f3a08aa2ac78b4bb14f1
+      uWebSockets.js: git@github.com+uNetworking/uWebSockets.js/105d9ec47126cb82e4a6f3a08aa2ac78b4bb14f1
     dev: false
 
   /@bcoe/v8-coverage@0.2.3:
@@ -1659,7 +1659,7 @@ packages:
   /axios@1.6.7:
     resolution: {integrity: sha512-/hDJGff6/c7u0hDkvkGxR/oy6CbCs8ziCsC7SqmhjfozqiJGc8Z11wrv9z9lYfY4K8l+H9TpjcMDX0xOZmx+RA==}
     dependencies:
-      follow-redirects: 1.15.5
+      follow-redirects: 1.15.6
       form-data: 4.0.0
       proxy-from-env: 1.1.0
     transitivePeerDependencies:
@@ -2475,8 +2475,8 @@ packages:
     resolution: {integrity: sha512-36yxDn5H7OFZQla0/jFJmbIKTdZAQHngCedGxiMmpNfEZM0sdEeT+WczLQrjK6D7o2aiyLYDnkw0R3JK0Qv1RQ==}
     dev: true
 
-  /follow-redirects@1.15.5:
-    resolution: {integrity: sha512-vSFWUON1B+yAw1VN4xMfxgn5fTUiaOzAJCKBwIIgT/+7CuGy9+r+5gITvP62j3RmaD5Ph65UaERdOSRGUzZtgw==}
+  /follow-redirects@1.15.6:
+    resolution: {integrity: sha512-wWN62YITEaOpSK584EZXJafH1AGpO8RVgElfkuXbTOrPX4fIfOyEpW/CsiNd8JdYrAoOvafRTOEnvsO++qCqFA==}
     engines: {node: '>=4.0'}
     peerDependencies:
       debug: '*'
@@ -4668,8 +4668,8 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
 
-  github.com/uNetworking/uWebSockets.js/105d9ec47126cb82e4a6f3a08aa2ac78b4bb14f1:
-    resolution: {tarball: https://codeload.github.com/uNetworking/uWebSockets.js/tar.gz/105d9ec47126cb82e4a6f3a08aa2ac78b4bb14f1}
+  git@github.com+uNetworking/uWebSockets.js/105d9ec47126cb82e4a6f3a08aa2ac78b4bb14f1:
+    resolution: {commit: 105d9ec47126cb82e4a6f3a08aa2ac78b4bb14f1, repo: git@github.com:uNetworking/uWebSockets.js.git, type: git}
     name: uWebSockets.js
     version: 20.41.0
     dev: false
